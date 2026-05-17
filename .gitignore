@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+lambda/
+lambda.zip
+*.zip
+.env
+.env.local
+secrets.json
+src/secrets.json
+*.log

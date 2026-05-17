@@ -1,0 +1,308 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "mi mercadona",
+			"intents": [
+				{
+					"name": "AMAZON.FallbackIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NavigateHomeIntent",
+					"samples": []
+				},
+				{
+					"name": "AddToCartIntent",
+					"slots": [
+						{
+							"name": "productName",
+							"type": "AMAZON.SearchQuery"
+						}
+					],
+					"samples": [
+						"añade {productName} al carrito",
+						"añade {productName} al carro",
+						"añade {productName}",
+						"añada {productName} al carrito",
+						"añada {productName} al carro",
+						"añada {productName}",
+						"echa {productName} al carro",
+						"echa {productName} al carrito",
+						"eche {productName} al carro",
+						"eche {productName} al carrito",
+						"mete {productName} al carrito",
+						"mete {productName} en el carro",
+						"meta {productName} al carrito",
+						"meta {productName} en el carro",
+						"pon {productName} en el carrito",
+						"ponga {productName} en el carrito",
+						"apunta {productName}",
+						"apunte {productName}",
+						"apunta {productName} a la lista",
+						"apunte {productName} a la lista",
+						"quiero {productName}",
+						"necesito {productName}",
+						"dile a mi mercadona que añada {productName}",
+						"dile a mi mercadona que añade {productName}",
+						"dile a mi mercadona que eche {productName}",
+						"dile a mi mercadona que echa {productName}",
+						"dile a mi mercadona que meta {productName}",
+						"dígale a mi mercadona que añada {productName}",
+						"dígale a mi mercadona que añade {productName}",
+						"dígale a mi mercadona que eche {productName}",
+						"dígale a mi mercadona que echa {productName}",
+						"dígale a mi mercadona que meta {productName}",
+						"a mi mercadona que añada {productName}",
+						"mi mercadona que añada {productName}",
+						"mi mercadona añade {productName}",
+						"mi mercadona añada {productName}"
+					]
+				},
+				{
+					"name": "AddMoreIntent",
+					"slots": [
+						{
+							"name": "productName",
+							"type": "AMAZON.SearchQuery"
+						}
+					],
+					"samples": [
+						"y {productName}",
+						"y también {productName}",
+						"también {productName}",
+						"ahora {productName}",
+						"otro {productName}",
+						"otra {productName}",
+						"otro {productName} más",
+						"otra {productName} más",
+						"pues {productName}",
+						"además {productName}",
+						"venga {productName}",
+						"mejor {productName}"
+					]
+				},
+				{
+					"name": "SetQuantityIntent",
+					"slots": [
+						{
+							"name": "quantity",
+							"type": "AMAZON.NUMBER"
+						}
+					],
+					"samples": [
+						"{quantity}",
+						"{quantity} unidades",
+						"{quantity} unidad",
+						"que sean {quantity}",
+						"que sean {quantity} unidades",
+						"que queden {quantity}",
+						"que queden {quantity} unidades",
+						"ponme {quantity}",
+						"ponme {quantity} unidades",
+						"póngame {quantity}",
+						"póngame {quantity} unidades",
+						"déjalo en {quantity}",
+						"déjalo en {quantity} unidades",
+						"déjelo en {quantity}",
+						"déjelo en {quantity} unidades",
+						"pon {quantity}",
+						"pon {quantity} unidades",
+						"ponga {quantity}",
+						"ponga {quantity} unidades",
+						"deja {quantity}",
+						"deja {quantity} unidades",
+						"deje {quantity}",
+						"deje {quantity} unidades"
+					]
+				},
+				{
+					"name": "RemoveFromCartIntent",
+					"slots": [
+						{
+							"name": "productName",
+							"type": "AMAZON.SearchQuery"
+						}
+					],
+					"samples": [
+						"quita {productName} del carrito",
+						"quita {productName} del carro",
+						"quita {productName}",
+						"quite {productName} del carrito",
+						"quite {productName} del carro",
+						"quite {productName}",
+						"saca {productName} del carrito",
+						"saca {productName} del carro",
+						"saque {productName} del carrito",
+						"saque {productName} del carro",
+						"borra {productName} del carrito",
+						"borre {productName} del carrito",
+						"elimina {productName} del carrito",
+						"elimina {productName}",
+						"elimine {productName} del carrito",
+						"elimine {productName}",
+						"quítame {productName}",
+						"quíteme {productName}",
+						"sácame {productName}",
+						"sáqueme {productName}",
+						"dile a mi mercadona que quite {productName}",
+						"dile a mi mercadona que quita {productName}",
+						"dile a mi mercadona que saque {productName}",
+						"dile a mi mercadona que saca {productName}",
+						"dígale a mi mercadona que quite {productName}",
+						"dígale a mi mercadona que quita {productName}",
+						"dígale a mi mercadona que saque {productName}",
+						"dígale a mi mercadona que saca {productName}",
+						"a mi mercadona que quite {productName}",
+						"mi mercadona que quite {productName}",
+						"mi mercadona quita {productName}",
+						"mi mercadona quite {productName}"
+					]
+				},
+				{
+					"name": "GetCartTotalIntent",
+					"slots": [],
+					"samples": [
+						"cuánto llevo",
+						"cuánto llevo gastado",
+						"cuánto suma el carrito",
+						"cuánto suma",
+						"cuánto va el carrito",
+						"a cuánto va el carrito",
+						"a cuánto va",
+						"cuánto cuesta el carrito",
+						"cuánto vale el carrito",
+						"cuál es el total",
+						"dime el total",
+						"dígame el total",
+						"cuánto me falta",
+						"cuánto me falta para el mínimo",
+						"cuánto falta para el mínimo",
+						"importe del carrito",
+						"total del carrito"
+					]
+				},
+				{
+					"name": "GetMinimumOrderIntent",
+					"slots": [],
+					"samples": [
+						"cuál es el importe mínimo",
+						"cuál es el mínimo",
+						"cuánto es el mínimo",
+						"cuánto es el importe mínimo",
+						"qué importe mínimo hay",
+						"compra mínima",
+						"pedido mínimo",
+						"mínimo de mercadona",
+						"importe mínimo de mercadona"
+					]
+				},
+				{
+					"name": "CheckoutIntent",
+					"slots": [],
+					"samples": [
+						"finaliza la compra",
+						"finalice la compra",
+						"finalizar la compra",
+						"ejecuta el pedido",
+						"ejecute el pedido",
+						"manda el pedido",
+						"mande el pedido",
+						"envía el pedido",
+						"envíe el pedido",
+						"haz la compra",
+						"haga la compra",
+						"haz el pedido",
+						"haga el pedido",
+						"tramita la compra",
+						"tramite la compra",
+						"tramita el pedido",
+						"tramite el pedido",
+						"confirma la compra",
+						"confirme la compra",
+						"confirma el pedido",
+						"confirme el pedido",
+						"realiza la compra",
+						"realice la compra",
+						"materializa la compra",
+						"materialice la compra",
+						"pide",
+						"pida",
+						"pide ya",
+						"pida ya",
+						"compra ya",
+						"compre ya",
+						"compra esto",
+						"compre esto"
+					]
+				},
+				{
+					"name": "ClearCartIntent",
+					"slots": [],
+					"samples": [
+						"vacía el carrito",
+						"vacía el carro",
+						"vacíe el carrito",
+						"vacíe el carro",
+						"vaciar el carrito",
+						"vaciar el carro",
+						"vaciar carrito",
+						"vacía mi carrito",
+						"vacíe mi carrito",
+						"vacíame el carro",
+						"vacíeme el carro",
+						"borra el carrito",
+						"borre el carrito",
+						"borra todo el carrito",
+						"borre todo el carrito",
+						"borrar el carrito",
+						"limpia el carrito",
+						"limpie el carrito",
+						"limpia el carro",
+						"limpie el carro",
+						"empieza de cero",
+						"empiece de cero",
+						"empieza de nuevo",
+						"empiece de nuevo"
+					]
+				}
+			],
+			"types": []
+		},
+		"dialog": {
+			"intents": [
+				{
+					"name": "ClearCartIntent",
+					"confirmationRequired": true,
+					"prompts": {
+						"confirmation": "Confirm.Intent.ClearCart"
+					},
+					"slots": []
+				}
+			],
+			"delegationStrategy": "SKILL_RESPONSE"
+		},
+		"prompts": [
+			{
+				"id": "Confirm.Intent.ClearCart",
+				"variations": [
+					{
+						"type": "PlainText",
+						"value": "Vas a vaciar el carrito entero. ¿Confirmas?"
+					}
+				]
+			}
+		]
+	}
+}
